@@ -14,8 +14,14 @@
 <body>
 
     <div class="pitch-deck-container">
+        <!-- Start Slide -->
+        <div id="start-slide" class="slide active">
+            <h1 class="slide-title">The Big Art Road Show</h1>
+            <button id="startBtn" class="start-button">Start the Show</button>
+        </div>
+
         <!-- Slide 1: Title -->
-        <div id="slide-1" class="slide">
+        <div id="slide-1" class="slide content-slide">
             <h1 class="slide-title">The Big Art Road Show</h1>
             <h2 class="subtitle font-light mb-8">Everyone gets to be an artist.</h2>
             <video class="visual" autoplay loop muted playsinline>
@@ -25,7 +31,7 @@
         </div>
 
         <!-- Slide 2: The Problem -->
-        <div id="slide-2" class="slide">
+        <div id="slide-2" class="slide content-slide">
             <h2 class="slide-title">The Unfamous Artist.</h2>
             <ul class="text-left slide-content list-disc ml-8">
                 <li>Art is so much work. Artists are so alone. They can't get famous if they just sit in a room.</li>
@@ -36,7 +42,7 @@
         </div>
 
         <!-- Slide 3: Our Solution -->
-        <div id="slide-3" class="slide">
+        <div id="slide-3" class="slide content-slide">
             <h2 class="slide-title">The Factory Truck: A Studio on Wheels.</h2>
             <ul class="text-left slide-content list-disc ml-8">
                 <li>We're a factory. We roll right up and get to work.</li>
@@ -47,7 +53,7 @@
         </div>
 
         <!-- Slide 4: The Pilot -->
-        <div id="slide-4" class="slide">
+        <div id="slide-4" class="slide content-slide">
             <h2 class="slide-title">The First Star: Miami.</h2>
             <ul class="text-left slide-content list-disc ml-8">
                 <li>Art Basel is where everyone goes to get famous. Perfect for us.</li>
@@ -58,7 +64,7 @@
         </div>
 
         <!-- Slide 5: The Long-Term Vision -->
-        <div id="slide-5" class="slide">
+        <div id="slide-5" class="slide content-slide">
             <h2 class="slide-title">More than a truck. The Brand.</h2>
             <ul class="text-left slide-content list-disc ml-8">
                 <li>Every truck is a branch of our big, beautiful brand.</li>
@@ -70,7 +76,7 @@
         </div>
 
         <!-- Slide 6: Credibility -->
-        <div id="slide-6" class="slide">
+        <div id="slide-6" class="slide content-slide">
             <h2 class="slide-title">A Proven Brand.</h2>
             <ul class="text-left slide-content list-disc ml-8">
                 <li>Dila is the artist behind it all. He knows how to make a thing famous.</li>
@@ -80,9 +86,13 @@
             <div class="visual slide-6-visual"></div>
         </div>
 
-        <button id="prevBtn" class="nav-button" aria-label="Previous Slide">&#9664;</button>
-        <button id="nextBtn" class="nav-button" aria-label="Next Slide">&#9654;</button>
+        <button id="prevBtn" class="nav-button hidden" aria-label="Previous Slide">&#9664;</button>
+        <button id="nextBtn" class="nav-button hidden" aria-label="Next Slide">&#9654;</button>
     </div>
+
+    <audio id="background-music" loop>
+        <source src="media/audio/Level 100.mp3" type="audio/mpeg">
+    </audio>
 
     <script src="script.js"></script>
 </body>
