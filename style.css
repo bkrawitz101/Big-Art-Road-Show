@@ -186,3 +186,48 @@ body {
     71% { transform: translate(-10px, 10px) skew(0); filter: saturate(2) contrast(1) hue-rotate(220deg); }
     72% { transform: translate(0, 0) skew(0); filter: saturate(1.5) contrast(1.5); }
 }
+
+/* --- Mobile Optimizations --- */
+@media (max-width: 768px) {
+    .pitch-deck-container {
+        padding: 1rem;
+    }
+
+    .slide {
+        padding: 2rem;
+        justify-content: flex-start; /* Align content to the top */
+        overflow-y: auto; /* Allow scrolling for very small screens */
+    }
+
+    .slide-title {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        -webkit-text-stroke: 1px #ff33a1;
+        text-shadow: 2px 2px 0px #000;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .slide-content li {
+        font-size: 1.1rem;
+    }
+
+    .visual {
+        width: 100%; /* Use full width */
+        height: 40%;
+    }
+
+    .start-button {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-button {
+        font-size: 1.5rem;
+        padding: 0.4rem 0.8rem;
+    }
+    #prevBtn { left: 0.5rem; }
+    #nextBtn { right: 0.5rem; }
+}
