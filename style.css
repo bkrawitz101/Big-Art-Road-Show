@@ -95,10 +95,13 @@ video.visual {
     /* This class is now used on a video, so the background-image is no longer needed */
 }
 
+.slide-7-visual {
+    background-image: url('https://placehold.co/1200x800/e76f51/000000?text=Featured+Artists');
+}
+
 .slide-title {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
     letter-spacing: 0.3rem;
     color: #000;
     -webkit-text-stroke: 1px #ff33a1;
